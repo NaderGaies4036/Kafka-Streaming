@@ -6,7 +6,8 @@ from kafka import KafkaProducer
 
 TOPIC_NAME = "transactions_csv_stream"
 BOOTSTRAP_SERVERS = "localhost:9092"
-CSV_FILE_PATH = "transactions.csv"
+CSV_FILE_PATH = "transactions_clean.csv"
+
 STREAM_DELAY = 0.5 
 
 

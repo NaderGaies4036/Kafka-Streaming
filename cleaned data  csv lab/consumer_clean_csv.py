@@ -11,7 +11,7 @@ consumer = KafkaConsumer(
     bootstrap_servers=BOOTSTRAP_SERVERS,
     group_id=GROUP_ID,
     auto_offset_reset="earliest",
-    enable_auto_commit=True,   # Kafka tracks offsets
+    enable_auto_commit=True,   
     value_deserializer=lambda v: json.loads(v.decode("utf-8"))
 )
 
